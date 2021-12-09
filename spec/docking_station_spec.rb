@@ -2,12 +2,15 @@ require 'docking_station_class'
 
 describe DockingStation do
         it { is_expected.to respond_to(:release_bike) }
+    
+    describe "#docking_station" do
+        it "releases a bike" do
+            docking_station = DockingStation.new
+            expect(docking_station.release_bike).to be_kind_of(Bike)
+        end
+    end
 end 
 
-describe release_bike do
-    it 'releases bike' do
-        expect(release_bike).to exist
-    end
-end
+
 
     
