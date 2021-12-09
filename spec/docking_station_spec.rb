@@ -6,7 +6,7 @@ describe DockingStation do
     describe "#docking_station" do
         it "releases a bike" do
             docking_station = DockingStation.new
-            expect(docking_station.release_bike).to be_kind_of(Bike)
+            expect(docking_station.release_bike).to be_instance_of(Bike)
         end
     end
 end 
